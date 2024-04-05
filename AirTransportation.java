@@ -36,5 +36,18 @@ public class AirTransportation extends Transport
         this.name = name;
     }
     
+    public String getTransportType(){
+        return "Transporte Aéreo";
+    }
     
+    public String toString(){
+        StringBuilder sb = new StringBuilder(super.toString());
+        
+        sb.append(String.format("%15s: %s\n", "Número de Contentores", this.numberOfContainers));
+        sb.append(String.format("%15s: %s\n", "Nome", this.name));
+        return sb.toString();
+    }
 }
+
+
+
