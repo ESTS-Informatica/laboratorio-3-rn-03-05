@@ -7,6 +7,22 @@
  */
 public class GroundTransportation extends Transport
 {
-    private static final double HONO = 3.0;
+    private static final double FEES = 3.0;
     private String licensePlate;
+    
+     public GroundTransportation(String licensePlate) {
+         super();
+         this.licensePlate = licensePlate;
+         setFees(FEES);
+    }
+    
+    public String getLicensePlate() {
+        return licensePlate;
+    }
+    
+    public void setLicensePlate(String licensePlate) {
+        this.licensePlate = licensePlate;
+    }
+    
+    
 }
